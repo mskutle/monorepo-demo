@@ -8,7 +8,7 @@
   "nodeSupportedVersionRange": ">=12.13.0 <13.0.0",
   "ensureConsistentVersions": true,
   "repository": {
-    "url": "git@gitlab.com:milescreate/pocs/monorepo.git"
+    "url": "https://github.com/mskutle/monorepo-demo.git"
   },
   "projects": [
     {
@@ -16,16 +16,18 @@
       "projectFolder": "apps/min-side"
     },
     {
-      "packageName": "@milescreate/component-library",
-      "projectFolder": "packages/component-library"
+      "packageName": "milescreate-component-library",
+      "projectFolder": "packages/component-library",
+      "shouldPublish": true
     },
     {
       "packageName": "min-side-api",
       "projectFolder": "apps/min-side-api"
     },
     {
-      "packageName": "@milescreate/utils",
-      "projectFolder": "packages/utils"
+      "packageName": "milescreate-utils",
+      "projectFolder": "packages/utils",
+      "shouldPublish": true
     }
   ]
 }

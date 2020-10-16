@@ -14,7 +14,7 @@
     "react-dom": "^16.14.0",
     "react-scripts": "3.4.3",
     "typescript": "3.9.7",
-    "@milescreate/component-library": "~0.1.0"
+    "milescreate-component-library": "~0.1.0"
   },
   "scripts": {
     "start": "react-scripts start",

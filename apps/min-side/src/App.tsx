@@ -1,5 +1,5 @@
 import React from 'react';
-import { Thing } from '@milescreate/component-library';
+import { Thing } from 'milescreate-component-library';
 import logo from './logo.svg';
 import './App.css';
 

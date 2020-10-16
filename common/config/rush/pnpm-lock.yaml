@@ -1,8 +1,8 @@
 dependencies:
-  '@rush-temp/component-library': 'file:projects/component-library.tgz_@types+node@12.12.67'
+  '@rush-temp/milescreate-component-library': 'file:projects/milescreate-component-library.tgz_@types+node@12.12.67'
+  '@rush-temp/milescreate-utils': 'file:projects/milescreate-utils.tgz'
   '@rush-temp/min-side': 'file:projects/min-side.tgz'
   '@rush-temp/min-side-api': 'file:projects/min-side-api.tgz'
-  '@rush-temp/utils': 'file:projects/utils.tgz'
   '@size-limit/preset-small-lib': 4.6.0_ec45e4fbe7073353127c72fc8dc5d7b1
   '@testing-library/dom': 7.26.0
   '@testing-library/jest-dom': 4.2.4
@@ -14892,7 +14892,7 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-aePbxDmcYW++PaqBsJ+HYUFwCdv4LVvdnhBy78E57PIor8/OVvhMrADFFEDh8DHDFRv/O9i3lPhsENjO7QX0+A==
-  'file:projects/component-library.tgz_@types+node@12.12.67':
+  'file:projects/milescreate-component-library.tgz_@types+node@12.12.67':
     dependencies:
       '@size-limit/preset-small-lib': 4.6.0_ec45e4fbe7073353127c72fc8dc5d7b1
       '@types/react': 16.9.52
@@ -14905,13 +14905,22 @@ packages:
       tslib: 2.0.3
       typescript: 3.9.7
     dev: false
-    id: 'file:projects/component-library.tgz'
-    name: '@rush-temp/component-library'
+    id: 'file:projects/milescreate-component-library.tgz'
+    name: '@rush-temp/milescreate-component-library'
     peerDependencies:
       '@types/node': '*'
     resolution:
-      integrity: sha512-05YtqY/fITGymTv5Hx92V6gF09tfgXGZXoV3A4VeagD/TEQemt5H9llerOcdgaTfYeuuZLzvteTj82DFJneIwA==
-      tarball: 'file:projects/component-library.tgz'
+      integrity: sha512-Y6+TPt4ChJrBeKZOV1Z9zk7k1AUKWJcggpUdP7tW/E/xSp9YILTK487R92Z5DaTmbCt/NEKlXxmkWUy3Fgw1IA==
+      tarball: 'file:projects/milescreate-component-library.tgz'
+    version: 0.0.0
+  'file:projects/milescreate-utils.tgz':
+    dependencies:
+      slug: 3.5.1
+    dev: false
+    name: '@rush-temp/milescreate-utils'
+    resolution:
+      integrity: sha512-/pnhAZT85P5egWG9LqhGVJCrjUsWI+Of2DQsU9U2DQycpOQq8ZoqMs8o7Pi6kb5gtm6qvW2Bvk9RU/EuIS495g==
+      tarball: 'file:projects/milescreate-utils.tgz'
     version: 0.0.0
   'file:projects/min-side-api.tgz':
     dependencies:
@@ -14919,7 +14928,7 @@ packages:
     dev: false
     name: '@rush-temp/min-side-api'
     resolution:
-      integrity: sha512-SYE0O2caqp2+b5UeQ7cRbkWsFWUyudGO9JJIKQPkKj4nJ7THDgqHJLxQRi/EvLlqaM3P+xDY683piXnTuejLTQ==
+      integrity: sha512-GTqbnVODDT24vaTRjq3ts8/C5MT2DUSwpglHcTiQd4yqRjxOvaR+rwDfQDNzBQ95VUau567qBMJSXLZiGCk/Sw==
       tarball: 'file:projects/min-side-api.tgz'
     version: 0.0.0
   'file:projects/min-side.tgz':
@@ -14939,24 +14948,15 @@ packages:
     dev: false
     name: '@rush-temp/min-side'
     resolution:
-      integrity: sha512-j+Gh1hpOYlQE2WDsOy6sCo30X5jBk0znlkmCIFt/mASmCEH0PJaCgFNNmlu/oTWZAWUZBDI4t4IXuof7DP5Y6Q==
+      integrity: sha512-P6MGxRqoeMlbYMUvIOHitggGsXxpTmNa3YXH9fNSU7R1wdBXRQRTnnUMP1yx1MUL6DbnLwu2hZcn9j7O15J51A==
       tarball: 'file:projects/min-side.tgz'
-    version: 0.0.0
-  'file:projects/utils.tgz':
-    dependencies:
-      slug: 3.5.1
-    dev: false
-    name: '@rush-temp/utils'
-    resolution:
-      integrity: sha512-7P4nNmSe2u4z/0UE6+vhSiZmXKar2dfVMbsGqQ8XuRYEsnvEKGHDgGyO1y49FmDDQ8Wh6pKIZ5Qa6l+oOUeDAA==
-      tarball: 'file:projects/utils.tgz'
     version: 0.0.0
 registry: ''
 specifiers:
-  '@rush-temp/component-library': 'file:./projects/component-library.tgz'
+  '@rush-temp/milescreate-component-library': 'file:./projects/milescreate-component-library.tgz'
+  '@rush-temp/milescreate-utils': 'file:./projects/milescreate-utils.tgz'
   '@rush-temp/min-side': 'file:./projects/min-side.tgz'
   '@rush-temp/min-side-api': 'file:./projects/min-side-api.tgz'
-  '@rush-temp/utils': 'file:./projects/utils.tgz'
   '@size-limit/preset-small-lib': ^4.6.0
   '@testing-library/dom': ~7.26.0
   '@testing-library/jest-dom': ^4.2.4

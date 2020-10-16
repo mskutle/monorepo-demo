@@ -33,7 +33,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "@milescreate/component-library",
+  "name": "milescreate-component-library",
   "author": "Magne Skutle",
   "module": "dist/component-library.esm.js",
   "size-limit": [

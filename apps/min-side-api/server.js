@@ -1,5 +1,5 @@
 const express = require("express");
-const { slugify, log } = require("@milescreate/utils");
+const { slugify, log } = require("milescreate-utils");
 
 const app = express();
 
