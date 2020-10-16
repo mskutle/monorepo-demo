@@ -58,6 +58,8 @@ jspm_packages/
 # OS X temporary files
 .DS_Store
 
+packages/**/dist/*
+
 # Rush temporary files
 common/deploy/
 common/temp/
