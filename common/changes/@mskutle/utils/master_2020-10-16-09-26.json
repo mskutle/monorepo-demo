@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "@mskutle/utils",
+      "comment": "..",
+      "type": "patch"
+    }
+  ],
+  "packageName": "@mskutle/utils",
+  "email": "magne.skutle@gmail.com"
+}

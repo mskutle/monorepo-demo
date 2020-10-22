@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "@mskutle/component-library",
+      "comment": "..",
+      "type": "patch"
+    }
+  ],
+  "packageName": "@mskutle/component-library",
+  "email": "magne.skutle@gmail.com"
+}

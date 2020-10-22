@@ -1,5 +1,5 @@
 {
-  "name": "milescreate-utils",
+  "name": "@mskutle/utils",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,5 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "slug": "~3.5.1"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   }
 }

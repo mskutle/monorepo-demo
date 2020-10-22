@@ -12,22 +12,20 @@
   },
   "projects": [
     {
-      "packageName": "min-side",
-      "projectFolder": "apps/min-side"
+      "packageName": "frontend",
+      "projectFolder": "apps/frontend"
     },
     {
-      "packageName": "milescreate-component-library",
-      "projectFolder": "packages/component-library",
-      "shouldPublish": true
+      "packageName": "@mskutle/component-library",
+      "projectFolder": "packages/component-library"
     },
     {
-      "packageName": "min-side-api",
-      "projectFolder": "apps/min-side-api"
+      "packageName": "backend",
+      "projectFolder": "apps/backend"
     },
     {
-      "packageName": "milescreate-utils",
-      "projectFolder": "packages/utils",
-      "shouldPublish": true
+      "packageName": "@mskutle/utils",
+      "projectFolder": "packages/utils"
     }
   ]
 }

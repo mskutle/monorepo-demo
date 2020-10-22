@@ -1,0 +1,50 @@
+image: docker:stable
+
+variables:
+  DOCKER_HOST: "tcp://localhost:2375"
+  DOCKER_TLS_CERTDIR: ""
+  DOCKER_DRIVER: overlay2
+  URL_PROD: "https://monorepo.milescloud.io"
+  URL_STAGING: "https://monorepo.milescloud.io"
+
+backend_build:
+  stage: build
+  only:
+    changes:
+      - "apps/backend/**/*"
+  tags:
+    - docker-dind
+  before_script:
+    - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN registry.gitlab.com
+  script:
+    - echo $API_HOST
+    - cd apps/backend
+    - docker build --cache-from "${CI_REGISTRY_IMAGE}:latest" --tag "${CI_REGISTRY_IMAGE}:${CI_JOB_ID}" --tag "${CI_REGISTRY_IMAGE}:latest" --tag "${CI_REGISTRY_IMAGE}/${CI_COMMIT_REF_SLUG}:${CI_COMMIT_SHA}" .
+    - docker push ${CI_REGISTRY_IMAGE}:${CI_JOB_ID}
+    - docker push ${CI_REGISTRY_IMAGE}/${CI_COMMIT_REF_SLUG}:${CI_COMMIT_SHA}
+    - docker push ${CI_REGISTRY_IMAGE}:latest
+    - echo ${CI_JOB_ID} > version
+  artifacts:
+    paths:
+      - version
+
+frontend_build:
+  stage: build
+  only:
+    changes:
+      - "apps/frontend/**/*"
+  tags:
+    - docker-dind
+  before_script:
+    - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN registry.gitlab.com
+  script:
+    - echo $API_HOST
+    - cd apps/frontend
+    - docker build --cache-from "${CI_REGISTRY_IMAGE}:latest" --tag "${CI_REGISTRY_IMAGE}:${CI_JOB_ID}" --tag "${CI_REGISTRY_IMAGE}:latest" --tag "${CI_REGISTRY_IMAGE}/${CI_COMMIT_REF_SLUG}:${CI_COMMIT_SHA}" .
+    - docker push ${CI_REGISTRY_IMAGE}:${CI_JOB_ID}
+    - docker push ${CI_REGISTRY_IMAGE}/${CI_COMMIT_REF_SLUG}:${CI_COMMIT_SHA}
+    - docker push ${CI_REGISTRY_IMAGE}:latest
+    - echo ${CI_JOB_ID} > version
+  artifacts:
+    paths:
+      - version

@@ -18,3 +18,6 @@
 #
 #   //registry.npmjs.org/:_authToken=${NPM_AUTH_TOKEN}
 #
+
+@mskutle:registry=https://npm.pkg.github.com
+//npm.pkg.github.com/:_authToken=2d872c3a9cfff9e7c31f5d556a07a1f11cc20fd4

@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "milescreate-utils",
+      "comment": "small change",
+      "type": "patch"
+    }
+  ],
+  "packageName": "milescreate-utils",
+  "email": "magne.skutle@miles.no"
+}

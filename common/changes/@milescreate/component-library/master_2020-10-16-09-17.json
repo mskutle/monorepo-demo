@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "@milescreate/component-library",
+      "comment": "tweaks",
+      "type": "patch"
+    }
+  ],
+  "packageName": "@milescreate/component-library",
+  "email": "magne.skutle@gmail.com"
+}

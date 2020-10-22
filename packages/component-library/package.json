@@ -33,7 +33,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "milescreate-component-library",
+  "name": "@mskutle/component-library",
   "author": "Magne Skutle",
   "module": "dist/component-library.esm.js",
   "size-limit": [
@@ -51,11 +51,14 @@
     "@types/react": "^16.9.52",
     "@types/react-dom": "^16.9.8",
     "husky": "^4.3.0",
-    "react": "^16.14.0",
+    "react": "~17.0.0",
     "react-dom": "^16.14.0",
     "size-limit": "^4.6.0",
     "tsdx": "^0.14.1",
     "tslib": "^2.0.3",
     "typescript": "3.9.7"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   }
 }

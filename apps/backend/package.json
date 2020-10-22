@@ -1,5 +1,5 @@
 {
-  "name": "min-side-api",
+  "name": "backend",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,6 +13,6 @@
   "license": "ISC",
   "dependencies": {
     "express": "~4.17.1",
-    "milescreate-utils": "~1.0.0"
+    "@mskutle/utils": "~1.0.0"
   }
 }
